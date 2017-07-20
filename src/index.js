@@ -2,7 +2,11 @@ const express = require('express');
 const app = express();
 
 app.get('/balance', function (req, res) {
-    res.sendStatus(500);
+    res.sendStatus(200);
+});
+
+app.get('/test', function (req, res) {
+    res.sendStatus(404);
 });
 
 app.post('/transfer', function (req, res) {
